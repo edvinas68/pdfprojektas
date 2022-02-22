@@ -12,12 +12,59 @@
     <title>Pasirinkimu langas</title>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
+    
+    <div class="purchase text-center">
+        <h1>Automatizuota dokumentų kūrimo sistema</h1>
+        <p>
+          Pasirinkite kokį dokumentą noritę sukurti.
+        </p>
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Įdarbinimo forma</h5>
+                </div>
+                <p class="card-text">
+                  Prašymo/Įsakymo priemimo formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Įdarbinimas</h1>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">E-book</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>$99.99</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Print Copy</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>$58.99</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 </body>
 </html>
