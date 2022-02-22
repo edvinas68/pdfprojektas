@@ -18,6 +18,8 @@
         <p>
           Pasirinkite kokį dokumentą noritę sukurti.
         </p>
+        <div style="height: 100px;">
+        
         <div class="cards">
           <div class="d-flex flex-row justify-content-center flex-wrap">
             <div class="card">
@@ -34,31 +36,114 @@
                 </div>
               </div>
             </div>
+         </div>
             <div class="card">
               <div class="card-body">
                 <div class="title">
-                  <h5 class="card-title">E-book</h5>
+                  <h5 class="card-title">Atleidimo forma</h5>
                 </div>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in.
+                Prašymo/Įsakymo Atleidimo formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>$99.99</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                  <h1>Atleidimas</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <div class="title">
-                  <h5 class="card-title">Print Copy</h5>
+                  <h5 class="card-title">Apmokamos atostogų forma</h5>
                 </div>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in.
+                Prašymo/Įsakymo apmokamų atostogų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>$58.99</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                  <h1>Apmokamos atostogos</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Nemokamų atostogų forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo nemokamų atostogų formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Nemokamos atostogos</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Vaiko priežiūros atostogų forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo vaiko priežiūros atostogų formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Vaiko priežiūros atostogos</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Pravaikštų forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo Pravaikštų formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Pravaikštos</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+                <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Išvykimo į komandiruotę forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo išvykimo į komandiruotę formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Komandiruotė</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+                <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Priedų forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo priedų formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Priedai</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                </div>
+              </div>
+            </div>
+                <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Darbo sąlygų keitimo forma</h5>
+                </div>
+                <p class="card-text">
+                Prašymo/Įsakymo darbo sąlygų keitimo formos pildymas.
+                </p>
+                <div class="pricing">
+                  <h1>Darbo sąlygų keitimas</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
