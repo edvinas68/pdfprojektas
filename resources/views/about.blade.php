@@ -22,7 +22,10 @@
         
         <div class="cards">
           <div class="d-flex flex-row justify-content-center flex-wrap">
-            <div class="card">
+            
+            </div>
+         </div>
+         <div class="card">
               <div class="card-body">
                 <div class="title">
                   <h5 class="card-title">Įdarbinimo forma</h5>
@@ -35,8 +38,7 @@
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
-            </div>
-         </div>
+              
             <div class="card">
               <div class="card-body">
                 <div class="title">
@@ -47,7 +49,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Atleidimas</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -61,7 +63,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Apmokamos atostogos</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -75,7 +77,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Nemokamos atostogos</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -89,7 +91,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Vaiko priežiūros atostogos</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -103,7 +105,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Pravaikštos</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -117,7 +119,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Komandiruotė</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
                 <div class="card">
               <div class="card-body">
@@ -129,7 +131,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Priedai</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
@@ -143,7 +145,7 @@
                 </p>
                 <div class="pricing">
                   <h1>Darbo sąlygų keitimas</h1>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
+                  <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
             </div>
