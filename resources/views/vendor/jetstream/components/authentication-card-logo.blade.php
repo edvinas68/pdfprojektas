@@ -1,0 +1,1 @@
+<img src="{{ asset('/images/rosvika.png') }}" alt="" style="width:256px;">
