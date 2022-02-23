@@ -18,6 +18,14 @@
         <p>
           Pasirinkite kokį dokumentą noritę sukurti.
         </p>
+
+
+        <div class="topnav">
+  <a class="active" href="#home">Pagrindinis</a>
+  
+  </div> 
+
+
         <div style="height: 100px;">
         
         <div class="cards">
@@ -34,11 +42,12 @@
                   Prašymo/Įsakymo priemimo formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Įdarbinimas</h1>
+                <br>
+                
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
-              
+
             <div class="card">
               <div class="card-body">
                 <div class="title">
@@ -48,7 +57,8 @@
                 Prašymo/Įsakymo Atleidimo formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Atleidimas</h1>
+                <br>
+
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -62,7 +72,7 @@
                 Prašymo/Įsakymo apmokamų atostogų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Apmokamos atostogos</h1>
+                  <br>
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -76,7 +86,8 @@
                 Prašymo/Įsakymo nemokamų atostogų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Nemokamos atostogos</h1>
+                <br>
+
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -90,7 +101,8 @@
                 Prašymo/Įsakymo vaiko priežiūros atostogų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Vaiko priežiūros atostogos</h1>
+                  <br>
+
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -104,7 +116,8 @@
                 Prašymo/Įsakymo Pravaikštų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Pravaikštos</h1>
+                  <br>
+
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -118,7 +131,8 @@
                 Prašymo/Įsakymo išvykimo į komandiruotę formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Komandiruotė</h1>
+                  <br>
+
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
                 <div class="card">
@@ -130,7 +144,8 @@
                 Prašymo/Įsakymo priedų formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Priedai</h1>
+                  <br>
+                  
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
@@ -144,7 +159,8 @@
                 Prašymo/Įsakymo darbo sąlygų keitimo formos pildymas.
                 </p>
                 <div class="pricing">
-                  <h1>Darbo sąlygų keitimas</h1>
+                <br>
+                
                   <a href="index.blade.php" class="btn btn-dark px-5 py-2 primary-btn mb-5">Pildyti</a>
                 </div>
               </div>
