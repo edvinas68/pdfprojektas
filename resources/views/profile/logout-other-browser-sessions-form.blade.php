@@ -1,15 +1,15 @@
 <x-jet-action-section>
     <x-slot name="title">
-        {{ __('Browser Sessions') }}
+        {{ __('Naršyklės sesijos') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Manage and log out your active sessions on other browsers and devices.') }}
+        {{ __('Tvarkykite ir atsijunkite aktyvias sesijas kitose naršyklėse ir įrenginiuose.') }}
     </x-slot>
 
     <x-slot name="content">
         <div class="max-w-xl text-sm text-gray-600">
-            {{ __('If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
+            {{ __('Jei reikia, galite atsijungti nuo visų kitų naršyklės seansų visuose savo įrenginiuose. Kai kurios jūsų naujausios sesijos yra išvardytos toliau; tačiau šis sąrašas gali būti neišsamus. Jei manote, kad jūsų paskyra buvo pažeista, taip pat turėtumėte atnaujinti slaptažodį.') }}
         </div>
 
         @if (count($this->sessions) > 0)
@@ -53,7 +53,7 @@
 
         <div class="flex items-center mt-5">
             <x-jet-button wire:click="confirmLogout" wire:loading.attr="disabled">
-                {{ __('Log Out Other Browser Sessions') }}
+                {{ __('Atjungti profilį nuo kitų įreginių') }}
             </x-jet-button>
 
             <x-jet-action-message class="ml-3" on="loggedOut">

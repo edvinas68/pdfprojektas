@@ -5,7 +5,7 @@
         <h1>Admin Dashboard</h1>
 
     </div>
-
+    <h1>Pridekite darbuotoja</h1>
     <div>
 
         <form action="{{url('/addseller')}}" method="POST">
@@ -13,15 +13,15 @@
         @csrf
 
             <div>
-                <label>Name</label>
+                <label>Vardas</label>
                 <input type="text" name="name" required ="">
             </div>
             <div>
-                 <label>Email</label>
+                 <label>El.Pastas</label>
                  <input type="email" name="email" required ="">
             </div>
             <div>
-                <label>Password</label>
+                <label>slaptažodis</label>
                 <input type="password" name="password" required ="">
             </div>
 
