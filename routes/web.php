@@ -30,6 +30,36 @@ Route::get('/atleidimas', function () {
     return view('atleidimas');
 })->name('atleidimas');
 
+Route::get('/AP_atostogos', function () {
+    return view('AP_atostogos');
+})->name('Apmokamos atostogos');
+
+Route::get('/NE_atostogos', function () {
+    return view('NE_atostogos');
+})->name('Neapmokamos atostogos');
+
+
+Route::get('/vaiko_atostogos', function () {
+    return view('vaiko_atostogos');
+})->name('Vaiko priežiūros atostogos');
+
+Route::get('/pravaikstos', function () {
+    return view('pravaikstos');
+})->name('Pravaikštos');
+
+Route::get('/komandiruote', function () {
+    return view('komandiruote');
+})->name('Komandiruotė');
+
+Route::get('/priedai', function () {
+    return view('priedai');
+})->name('Priedai');
+
+Route::get('/ds_keitimas', function () {
+    return view('ds_keitimas');
+})->name('Darbo sąlygų keitimas');
+
+
 
 
 
