@@ -22,6 +22,16 @@ Route::get('/index', function () {
     return view('index');
 })->name('index');
 
+Route::get('/idarbinimas', function () {
+    return view('idarbinimas');
+})->name('idarbinimas');
+
+Route::get('/atleidimas', function () {
+    return view('atleidimas');
+})->name('atleidimas');
+
+
+
 
 Route::get('/redirects', [HomeController::class,"index"]);
 

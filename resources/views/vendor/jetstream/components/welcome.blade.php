@@ -16,7 +16,7 @@
     <div class="p-6">
         <div class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-gray-400"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://www.youtube.com/">Įdarbinimas</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ url('idarbinimas') }}">Įdarbinimas</a></div>
         </div>
 
         <div class="ml-12">
@@ -24,7 +24,7 @@
                 Įdarbinimo, prašymo/įsakymo, darbo sutarties dokumentų generavimas.
             </div>
 
-            <a href="https://www.youtube.com/">
+            <a href="{{ url('idarbinimas') }}">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                         <div>Pildyti paraišką</div>
 
@@ -39,7 +39,7 @@
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
         <div class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-gray-400"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laracasts.com">Atleidimas</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ url('atleidimas') }}">Atleidimas</a></div>
         </div>
 
         <div class="ml-12">
@@ -47,7 +47,7 @@
                 Darbo sutarties nutraukimas 55 str, 56 str, 57 str, 58 str, 59 str.
             </div>
 
-            <a href="https://laracasts.com">
+            <a href="{{ url('atleidimas') }}">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                         <div>Pildyti paraišką</div>
 
