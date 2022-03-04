@@ -4,7 +4,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Priemimas į darbą') }}
+            {{ __('Atleidimas') }}
         </h2>
     </x-slot>
 
@@ -13,11 +13,11 @@
         <x-jet-application-logo class="block h-12 w-auto" />
     </div>
 
-    <div style="text-align:center" class="mt-8 text-2xl">
-        Priemimo į darbą dokumentų pildymo sistema
+    <div class="mt-8 text-2xl">
+    Darbo sutarties nutraukimas darbuotojo iniciatyva be svarbių priežasčių 55 str.
     </div>
 
-    <div style="text-align:center" class="mt-6 text-gray-500">
+    <div class="mt-6 text-gray-500">
     Užpildykite šios formos klausimus ir PDF dokumentas bus sugeneruotas automatiškai.
     </div>
 </div>
@@ -49,14 +49,16 @@
 <body>
 <div class="container">
     <form action="generateprasymas.php" method="POST">
-
-    <br>
+        <br>
+        <h1 style="text-align:center">Sugeneruokite dokumentą</h1>
+        <br>
+        <br>
         
 
         </select> 
 
         <form>
-        <div style="text-align:center" class="fallbackDatePicker">
+        <div class="fallbackDatePicker">
         <span>
         <label>Pasirinkite prašymo data: </label>
         <br>
@@ -118,29 +120,9 @@
                 <input type="text" name="lname" class="form-control" placeholder="Pavardenis" required>
             </div>
 
-            <div class="col-lg-6">
-                Darbo pradžios data
-                <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
-            </div>
-
-            <div class="col-lg-6">
-                Pareigos
-                <input type="text" name="pareigos" class="form-control" placeholder="Pvz: Vairuotojas" required>
-            </div>
-
         </div>
 
         <div class="form-group row">
-
-            <div class="col-lg-6">
-                Elektroninis paštas
-                <input type="email" name="email" class="form-control" placeholder="elpastas@gmail.com" required>
-            </div>
-
-            <div class="col-lg-6">
-                Telefono numeris
-                <input type="tel" name="phone" class="form-control" placeholder="+370" required>
-            </div>
 
             <div class="col-lg-6">
                 Asmens kodas
@@ -148,24 +130,9 @@
             </div>
 
             <div class="col-lg-6">
-                Gyvenamasis miestas/rajonas
-                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kaunas" required>
-            </div>
-
-            <div class="col-lg-6">
                 Gyvenamasis adresas
-                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g." required>
+                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g. 4, Kauno raj." required>
             </div>
-
-            <div class="col-lg-6">
-                Banko sąskaitos numeris
-                <input type="text" name="sasknr" class="form-control" placeholder="Pvz: LT111222333445551652" maxlength="18" required>
-            
-            </div>
-
-
-            
-
 
 
             <div class="col-lg-6">
@@ -175,27 +142,19 @@
             </div>
 
             <div class="col-lg-6">
-                Pareigos kilmininko linksniu
+                Vardas/Pavardė galininko linksniu
                 <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Kelininko" required>
             </div>
             
+            <div class="col-lg-6">
+                Atleidimo data
+                <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
+            </div>
   
         </div>
 
-        <label for="pasirinkti">Pasirinkite Taikyti/Netaikyti NPD:</label required>
-        <select class="rounded" name="pasirinkti" id="pasirinkti">
-  <option value="netaikyti">Netaikyti</option>
-  <option value="taikyti">Taikyti</option>
-  </select>
-
         <br>
-
-        <label for="uzmokestis">Informaciją apie man priskaičiuotą darbo užmokesti teikti:</label required>
-        <select class="rounded" name="uzmokestis" id="uzmokestis">
-  <option value="Lapelyje">Lapelyje</option>
-  <option value="El.pastu">El.pastu</option>
-  </select> 
-    <br><br>
+    <br>
         
         
         <button type="submit" class="btn btn-block btn-dark">Generuoti priemimo į darbą dokumentus</button>

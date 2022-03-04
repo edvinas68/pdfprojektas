@@ -3,11 +3,11 @@
         <x-jet-application-logo class="block h-12 w-auto" />
     </div>
 
-    <div class="mt-8 text-2xl">
+    <div style="text-align:center" class="mt-8 text-2xl">
         Sveiki atvykę į Rosvikos dokumentų pildymo sistemą!
     </div>
 
-    <div class="mt-6 text-gray-500">
+    <div style="text-align:center" class="mt-6 text-gray-500">
     Kiekvienam verslui, nepriklausomai nuo jo dydžio ar veiklos rūšies yra reikalingos finansinės ir buhalterinės apskaitos žinios. Nuolat keičiantis įstatymams ir teisės aktams, teisinga apskaita tampa nelengva užduotimi. Todėl protinga šia sritį patikėti profesionalams.
     </div>
 </div>
@@ -44,7 +44,7 @@
 
         <div class="ml-12">
             <div class="mt-2 text-sm text-gray-500">
-                Darbo sutarties nutraukimas 55 str, 56 str, 57 str, 58 str, 59 str.
+                Darbo sutarties nutraukimas 54 str, 55 str, 56 str, 57 str, 58 str, 59 str.
             </div>
 
             <a href="{{ url('atleidimas') }}">

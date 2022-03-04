@@ -13,7 +13,7 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//----------------------------------------------MAIN----------------------------------------------------------
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
@@ -22,6 +22,8 @@ Route::get('/index', function () {
     return view('index');
 })->name('index');
 
+
+//---------------------------------------------------PASIRINKIMAI---------------------------------------------------------------
 Route::get('/idarbinimas', function () {
     return view('idarbinimas');
 })->name('idarbinimas');
@@ -59,6 +61,30 @@ Route::get('/ds_keitimas', function () {
     return view('ds_keitimas');
 })->name('Darbo sąlygų keitimas');
 
+//------------------------------------------------------------ATLEIDIMAS--------------------------------------------
+Route::get('/54', function () {
+    return view('54');
+})->name('Atleidimas pagal 54 str.');
+
+Route::get('/55', function () {
+    return view('55');
+})->name('Atleidimas pagal 55 str.');
+
+Route::get('/56', function () {
+    return view('56');
+})->name('Atleidimas pagal 56 str.');
+
+Route::get('/57', function () {
+    return view('57');
+})->name('Atleidimas pagal 57 str.');
+
+Route::get('/58', function () {
+    return view('58');
+})->name('Atleidimas pagal 58 str.');
+
+Route::get('/59', function () {
+    return view('59');
+})->name('Atleidimas pagal 59 str.');
 
 
 
