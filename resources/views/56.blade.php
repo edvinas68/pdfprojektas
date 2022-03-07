@@ -13,11 +13,11 @@
         <x-jet-application-logo class="block h-12 w-auto" />
     </div>
 
-    <div class="mt-8 text-2xl">
+    <div style="text-align:center" class="mt-8 text-2xl">
     Darbo sutarties nutraukimas darbuotojo iniciatyva be svarbių priežasčių 56 str.
     </div>
 
-    <div class="mt-6 text-gray-500">
+    <div style="text-align:center" class="mt-6 text-gray-500">
     Užpildykite šios formos klausimus ir PDF dokumentas bus sugeneruotas automatiškai.
     </div>
 </div>
@@ -132,36 +132,41 @@
                 <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g. 4, Kauno raj." required>
             </div>
 
-
+            
             <div class="col-lg-6">
+                <br>
                 Įmonės pavadinimas
                 <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
             
             </div>
 
             <div class="col-lg-6">
+                <br>
                 Vardas/Pavardė galininko linksniu
-                <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Kelininko" required>
+                <input type="text" name="pareigosGal" class="form-control" placeholder="Pvz: Vardenį Pavardenį" required>
             </div>
             
             <div class="col-lg-6">
+                <br>
                 Atleidimo data
                 <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
             </div>
 
-            
-            <label for="pasirinkti">Pasirinkite priežastį</label required>
-            <select class="rounded" name="priezastis" id="priezastis">
-            <option value="1">Darbuotojo prastova ne dėl darbuotojo kaltės, kuri tęsiasi ilgiau kaip trisdešimt dienų iš eilės.</option>
-            <option value="2">Darbuotojo prastova ne dėl darbuotojo kaltės, kurią sudaro daugiau kaip keturiasdešimt penkios dienos per paskutinius dvylika mėnesių.</option>
-            <option value="3">Darbuotojui du mėnesius iš eilės ir daugiau nemokamas visas jam priklausantis darbo užmokestis.</option>
-            <option value="4">Darbdavys ilgiau kaip du mėnesius iš eilės nevykdo savo įsipareigojimų, kuriuos nustato darbuotojų saugą ir sveikatą reglamentuojančios darbo teisės normos</option>
-            <option value="5">Darbuotojas negali tinkamai atlikti savo darbo funkcijos dėl ligos ar neįgalumo arba dėl to, kad namuose slaugo šeimos narį</option>
-            <option value="6">Darbuotojui dirbančiam pagal neterminuotą darbo sutartį sukako senatvės pensijos amžius</option>
-
-
+            <div class="col-lg-6">
+                <br>
+                <label for="pasirinkti">Pasirinkite priežastį</label required>
+                <select style="max-width:540px" class="rounded" name="priezastis" id="priezastis">                    
+                <option value="1">Darbuotojo prastova ne dėl darbuotojo kaltės, kuri tęsiasi ilgiau kaip trisdešimt dienų iš eilės.</option>
+                <option value="2">Darbuotojo prastova ne dėl darbuotojo kaltės, kurią sudaro daugiau kaip keturiasdešimt penkios dienos per paskutinius dvylika mėnesių.</option>
+                <option value="3">Darbuotojui du mėnesius iš eilės ir daugiau nemokamas visas jam priklausantis darbo užmokestis.</option>
+                <option value="4">Darbdavys ilgiau kaip du mėnesius iš eilės nevykdo savo įsipareigojimų, kuriuos nustato darbuotojų saugą ir sveikatą reglamentuojančios darbo teisės normos</option>
+                <option value="5">Darbuotojas negali tinkamai atlikti savo darbo funkcijos dėl ligos ar neįgalumo arba dėl to, kad namuose slaugo šeimos narį</option>
+                <option value="6">Darbuotojui dirbančiam pagal neterminuotą darbo sutartį sukako senatvės pensijos amžius</option>
+                </select>
+            </div>
+           
         </div>
-
+            
         <br>
     <br>
         

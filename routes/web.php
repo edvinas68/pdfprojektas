@@ -86,6 +86,15 @@ Route::get('/59', function () {
     return view('59');
 })->name('Atleidimas pagal 59 str.');
 
+Route::get('/vaiko_priez_ats', function () {
+    return view('vaiko_priez_ats');
+})->name('Vaiko priežiūros atostogos');
+
+Route::get('/tevystes_atos', function () {
+    return view('tevystes_ats');
+})->name('Tėvystės atostogos');
+
+
 
 
 

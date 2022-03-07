@@ -21,7 +21,7 @@
                  <input type="email" name="email" required ="">
             </div>
             <div>
-                <label>slaptažodis</label>
+                <label>Slaptažodis</label>
                 <input type="password" name="password" required ="">
             </div>
 
