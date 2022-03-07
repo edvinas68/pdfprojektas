@@ -121,32 +121,11 @@
             </div>
 
         </div>
+        
 
         <div class="form-group row">
 
         <div class="col-lg-6">
-                Direktoriaus Vardas/Pavardė naudininko linksniu.
-                <input type="text" name="direktorius" class="form-control" placeholder="Pvz: Vardeniui Pavardeniui" required>
-            </div>
-
-            <div class="col-lg-6">
-                Miestas
-                <input type="text" name="miestas" class="form-control" placeholder="Pvz: Kaunas" required>
-            </div>
-
-            <div class="col-lg-6">
-                Vaiko gimimo data (yy.mm.dd)
-                <input type="text" name="vaikogimimas" class="form-control" placeholder="Pvz: 2015.09.20" required>
-            </div>
-
-            <div class="col-lg-6">
-                Vaiko asmens kodas
-                <input type="text" name="asmenskodas" class="form-control" placeholder="A.k." maxlength="11" required>
-            </div>
-
-
-            
-            <div class="col-lg-6">
                 <br>
                 Įmonės pavadinimas
                 <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
@@ -155,15 +134,55 @@
 
             <div class="col-lg-6">
                 <br>
-                Vardas/Pavardė galininko linksniu
-                <input type="text" name="vardasGal" class="form-control" placeholder="Pvz: Vardenė Pavardenė" required>
+                Dokumento numeris
+                <input type="text" name="fname" class="form-control" placeholder="Dok. nr." required>
             </div>
+
+        <div class="col-lg-6">
+            <br>
+                Direktoriaus Vardas/Pavardė naudininko linksniu.
+                <input type="text" name="direktorius" class="form-control" placeholder="Pvz: Vardeniui Pavardeniui" required>
+            </div>
+
+            <div class="col-lg-6">
+            <br>
+                Miestas
+                <input type="text" name="miestas" class="form-control" placeholder="Pvz: Kaunas" required>
+            </div>
+
+            <div class="col-lg-6">
+            <br>
+                Vaiko gimimo data (yy.mm.dd)
+                <input type="text" name="vaikogimimas" class="form-control" placeholder="Pvz: 2015.09.20" required>
+            </div>
+
+            <div class="col-lg-6">
+            <br>
+                Vaiko asmens kodas
+                <input type="text" name="asmenskodas" class="form-control" placeholder="A.k." maxlength="11" required>
+            </div>
+
+            <div class="col-lg-6">
+                <br>
+                Vardas/Pavardė kilmininko linksniu
+                <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Aldonos Kazlauskienės" required>
+                <br>
+            </div>
+
+
             
             <div class="col-lg-6">
                 <br>
-                Atleidimo data
-                <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
-            </div>     
+                Įmonės pavadinimas
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+            </div>
+
+            <div class="col-lg-6">
+                <br>
+                Vardas/Pavardė galininko linksniu
+                <input type="text" name="vardasGal" class="form-control" placeholder="Pvz: Vardenė Pavardenė" required>
+            </div>
+                
         </div>
             
         <br>

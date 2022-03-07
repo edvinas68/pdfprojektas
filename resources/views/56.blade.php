@@ -156,12 +156,12 @@
                 <br>
                 <label for="pasirinkti">Pasirinkite priežastį</label required>
                 <select style="max-width:540px" class="rounded" name="priezastis" id="priezastis">                    
-                <option value="1">Darbuotojo prastova ne dėl darbuotojo kaltės, kuri tęsiasi ilgiau kaip trisdešimt dienų iš eilės.</option>
-                <option value="2">Darbuotojo prastova ne dėl darbuotojo kaltės, kurią sudaro daugiau kaip keturiasdešimt penkios dienos per paskutinius dvylika mėnesių.</option>
-                <option value="3">Darbuotojui du mėnesius iš eilės ir daugiau nemokamas visas jam priklausantis darbo užmokestis.</option>
-                <option value="4">Darbdavys ilgiau kaip du mėnesius iš eilės nevykdo savo įsipareigojimų, kuriuos nustato darbuotojų saugą ir sveikatą reglamentuojančios darbo teisės normos</option>
-                <option value="5">Darbuotojas negali tinkamai atlikti savo darbo funkcijos dėl ligos ar neįgalumo arba dėl to, kad namuose slaugo šeimos narį</option>
-                <option value="6">Darbuotojui dirbančiam pagal neterminuotą darbo sutartį sukako senatvės pensijos amžius</option>
+                <option value="1">1. Darbuotojo prastova ne dėl darbuotojo kaltės, kuri tęsiasi ilgiau kaip trisdešimt dienų iš eilės.</option>
+                <option value="2">2. Darbuotojo prastova ne dėl darbuotojo kaltės, kurią sudaro daugiau kaip keturiasdešimt penkios dienos per paskutinius dvylika mėnesių.</option>
+                <option value="3">3. Darbuotojui du mėnesius iš eilės ir daugiau nemokamas visas jam priklausantis darbo užmokestis.</option>
+                <option value="4">4. Darbdavys ilgiau kaip du mėnesius iš eilės nevykdo savo įsipareigojimų, kuriuos nustato darbuotojų saugą ir sveikatą reglamentuojančios darbo teisės normos</option>
+                <option value="5">5. Darbuotojas negali tinkamai atlikti savo darbo funkcijos dėl ligos ar neįgalumo arba dėl to, kad namuose slaugo šeimos narį</option>
+                <option value="6">6. Darbuotojui dirbančiam pagal neterminuotą darbo sutartį sukako senatvės pensijos amžius</option>
                 </select>
             </div>
            
