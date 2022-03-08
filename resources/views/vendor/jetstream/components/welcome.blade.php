@@ -126,7 +126,7 @@
     <div class="p-6 border-t border-gray-200 md:border-l">
         <div class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-gray-400"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ url('pravaikstos') }}">Pravaikštos</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ url('pravaikstos') }}">Pravaikštos/Pasiaiškinimas</a></div>
         </div>
 
         <div class="ml-12">

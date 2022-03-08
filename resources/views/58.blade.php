@@ -167,7 +167,7 @@
             <div class="col-lg-6">
                 <br>
                 Vardas/Pavardė galininko linksniu
-                <input type="text" name="pareigosGal" class="form-control" placeholder="Pvz: Vardenį Pavardenį" required>
+                <input type="text" name="vardasGal" class="form-control" placeholder="Pvz: Vardenį Pavardenį" required>
             </div>
 
             <div class="col-lg-6">

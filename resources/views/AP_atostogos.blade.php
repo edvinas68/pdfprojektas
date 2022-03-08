@@ -107,6 +107,7 @@
         <div class="form-group row">
 
             <div class="col-lg-6">
+                <br>
                 Vardas
                 <input type="text" name="fname" class="form-control" placeholder="Vardenis" required>
             </div>

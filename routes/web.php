@@ -90,9 +90,18 @@ Route::get('/vaiko_priez_ats', function () {
     return view('vaiko_priez_ats');
 })->name('Vaiko priežiūros atostogos');
 
-Route::get('/tevystes_atos', function () {
+Route::get('/tevystes_ats', function () {
     return view('tevystes_ats');
 })->name('Tėvystės atostogos');
+
+Route::get('/provaikstos', function () {
+    return view('provaikstos');
+})->name('Provaikštos/Pasiaiškinimas');
+
+Route::get('/direktorius_komandiruote', function () {
+    return view('direktorius_komandiruote');
+})->name('Direktoriaus komandiruotė');
+
 
 
 

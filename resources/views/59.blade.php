@@ -128,7 +128,7 @@
 
             <div class="col-lg-6">
                 Pareigos
-                <input type="text" name="pareigos" class="form-control" placeholder="A.k." maxlength="11" required>
+                <input type="text" name="pareigos" class="form-control" placeholder="Pareigos" required>
             </div>
 
             <div class="col-lg-6">

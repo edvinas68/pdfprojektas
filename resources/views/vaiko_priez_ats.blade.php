@@ -165,7 +165,7 @@
             <div class="col-lg-6">
                 <br>
                 Vardas/Pavardė kilmininko linksniu
-                <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Aldonos Kazlauskienės" required>
+                <input type="text" name="vardasKil" class="form-control" placeholder="Pvz: Aldonos Kazlauskienės" required>
                 <br>
             </div>
 
