@@ -102,6 +102,10 @@ Route::get('/direktorius_komandiruote', function () {
     return view('direktorius_komandiruote');
 })->name('Direktoriaus komandiruotė');
 
+Route::get('/darbuotojas_komandiruote', function () {
+    return view('darbuotojas_komandiruote');
+})->name('Darbuotojo komandiruotė');
+
 
 
 
