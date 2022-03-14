@@ -3,7 +3,7 @@
 
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Priemimas į darbą') }}
         </h2>
     </x-slot>
@@ -48,6 +48,7 @@
 </head>
 <body>
 <div class="container">
+    
     <form action="generateprasymas.php" method="POST">
 
     <br>
@@ -208,7 +209,7 @@
     <br><br>
         
         
-    <button type="submit" class="btn btn-block btn-dark">Generuoti atleidimo iš darbo dokumentus</button>
+    <button type="submit" class="btn btn-block btn-dark">Generuoti įdarbinimo dokumentus</button>
 
         <br><br>
     </form>

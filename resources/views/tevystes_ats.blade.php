@@ -131,7 +131,7 @@
             <div class="col-lg-6">
                 <br>
                 Įmonės pavadinimas
-                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Pavizdys'" required>
             
             </div>
 
@@ -152,7 +152,7 @@
                 <br>
         <div  class="fallbackDatePicker">
         <span>
-        <label>Atsotogų data nuo:</label>
+        <label>Atostogų data nuo:</label>
         <br>
         <label for="day">Diena:</label>
         <select class="rounded" id="day" name="AtNuoday">

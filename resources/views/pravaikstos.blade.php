@@ -132,7 +132,7 @@
 <div class="col-lg-6">
     <br>
     Įmonės pavadinimas
-    <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+    <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Pavizdys'" required>
 
 </div>
 
@@ -145,7 +145,7 @@
 <div class="col-lg-6">
     <br>
     Pasiaiškinimas
-    <input type="text" name="priezastis" class="form-control" placeholder="Jusu pasiaiškinimas" required></input>
+    <input type="text" name="priezastis" class="form-control" placeholder="Jūsų pasiaiškinimas" required></input>
 </div>
 
 <div class="col-lg-6">

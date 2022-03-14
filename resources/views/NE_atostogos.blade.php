@@ -137,8 +137,9 @@
             <div class="col-lg-6">
                 <br>
                 Įmonės pavadinimas
-                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Pavizdys'" required>
             </div>
+            
             
 
             <div class="col-lg-6">
@@ -152,6 +153,11 @@
                 Darbuotojo Vardas/Pavardė kilmininko linksniu
                 <input type="text" name="vardasKil" class="form-control" placeholder="Pvz: Vardenio Pavardenio" required>
             </div>
+
+            <div class="col-lg-6">
+                <br>
+                
+            </div>
             
 
             <div class="col-lg-6">
@@ -159,7 +165,7 @@
                 <br>
         <div  class="fallbackDatePicker">
         <span>
-        <label>Atsotogų data nuo:</label>
+        <label>Atostogų data nuo:</label>
         <br>
         <label for="day">Diena:</label>
         <select class="rounded" id="day" name="AtNuoday">
@@ -219,7 +225,7 @@
                 <br>
         <div  class="fallbackDatePicker">
         <span>
-        <label>Atsotogų data iki:</label>
+        <label>Atostogų data iki:</label>
         <br>
         <label for="day">Diena:</label>
         <select class="rounded" id="day" name="AtIkiday">
@@ -278,7 +284,7 @@
     <br>
         
         
-        <button type="submit" class="btn btn-block btn-dark">Generuoti atleidimo iš darbo dokumentus</button>
+        <button type="submit" class="btn btn-block btn-dark">Generuoti neapmokamų atostogų dokumentus</button>
 
         <br><br>
     </form>

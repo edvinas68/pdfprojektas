@@ -128,7 +128,7 @@
         <div class="col-lg-6">
                 <br>
                 Įmonės pavadinimas
-                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Pavizdys'" required>
             
             </div>
 

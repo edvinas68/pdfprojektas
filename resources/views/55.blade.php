@@ -58,7 +58,7 @@
         </select> 
 
         <form>
-        <div class="fallbackDatePicker">
+        <div style="text-align:center" class="fallbackDatePicker">
         <span>
         <label>Pasirinkite prašymo data: </label>
         <br>
@@ -125,28 +125,33 @@
         <div class="form-group row">
 
             <div class="col-lg-6">
+                <br>
                 Asmens kodas
                 <input type="text" name="asmenskodas" class="form-control" placeholder="A.k." maxlength="11" required>
             </div>
 
             <div class="col-lg-6">
+                <br>
                 Gyvenamasis adresas
                 <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g. 4, Kauno raj." required>
             </div>
 
 
             <div class="col-lg-6">
+                <br>
                 Įmonės pavadinimas
                 <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
             
             </div>
 
             <div class="col-lg-6">
+                <br>
                 Vardas/Pavardė galininko linksniu
                 <input type="text" name="vardasGal" class="form-control" placeholder="Pvz: Vardenį Pavardenį" required>
             </div>
             
             <div class="col-lg-6">
+                <br>
                 Atleidimo data
                 <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
             </div>
@@ -157,7 +162,7 @@
     <br>
         
         
-        <button type="submit" class="btn btn-block btn-dark">Generuoti priemimo į darbą dokumentus</button>
+        <button type="submit" class="btn btn-block btn-dark">Generuoti atleidimo iš darbo dokumentus</button>
 
         <br><br>
     </form>

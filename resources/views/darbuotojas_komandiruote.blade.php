@@ -91,7 +91,7 @@
 <div class="col-lg-6">
     <br>
     Įmonės pavadinimas
-    <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: Imone" required>
+    <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: Pavizdys" required>
 </div>
 
 <div class="col-lg-6">
@@ -259,7 +259,7 @@
     <br>
         
         
-        <button type="submit" class="btn btn-block btn-dark">Generuoti direktoriaus komandiruotės dokumentus</button>
+        <button type="submit" class="btn btn-block btn-dark">Generuoti darbuotojo komandiruotės dokumentus</button>
 
         <br><br>
     </form>

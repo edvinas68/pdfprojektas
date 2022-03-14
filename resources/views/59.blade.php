@@ -134,7 +134,7 @@
             <div class="col-lg-6">
                 
                 Įmonės pavadinimas
-                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Pavizdys'" required>
             </div>
 
             <div class="col-lg-6">
@@ -159,7 +159,7 @@
             <div class="col-lg-6">
                 <br>
                 Darbdavio priežastis lėmusi nutraukti darbo santykius
-                <input  name="priezastis" class="form-control" placeholder="Jusu priežastis" required></input>
+                <input  name="priezastis" class="form-control" placeholder="Jūsų priežastis" required></input>
             </div>
 
             <div class="col-lg-6">
