@@ -22,6 +22,12 @@ Route::get('/index', function () {
     return view('index');
 })->name('index');
 
+Route::get('/darbuotojas_komandiruote', function () {
+    return view('darbuotojas_komandiruote');
+})->name('Darbuotojo komandiruotė');
+
+
+
 
 //---------------------------------------------------PASIRINKIMAI---------------------------------------------------------------
 Route::get('/idarbinimas', function () {
@@ -105,6 +111,7 @@ Route::get('/direktorius_komandiruote', function () {
 Route::get('/darbuotojas_komandiruote', function () {
     return view('darbuotojas_komandiruote');
 })->name('Darbuotojo komandiruotė');
+
 
 
 

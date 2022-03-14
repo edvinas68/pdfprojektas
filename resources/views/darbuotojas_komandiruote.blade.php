@@ -115,7 +115,7 @@
 <div class="col-lg-6">
     <br>
     Dokumento numeris
-    <input type="text" name="dok.nr" class="form-control" placeholder="Dok. nr." required>
+    <input type="text" name="dokumentonr" class="form-control" placeholder="Dok. nr." required>
 </div>
 
 <div class="col-lg-6">
