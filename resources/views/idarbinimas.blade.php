@@ -49,7 +49,7 @@
 <body>
 <div class="container">
     
-    <form action="generateprasymas.php" method="POST">
+    <form action="generate.blade.php" method="POST">
 
     <br>
         
@@ -111,24 +111,24 @@
 
             <div class="col-lg-6">
                 Vardas
-                <input type="text" name="fname" class="form-control" placeholder="Vardenis" required>
+                <input type="text" name="fname" class="form-control" placeholder="Vardenis">
             </div>
 
             <div class="col-lg-6">
                 Pavardė
-                <input type="text" name="lname" class="form-control" placeholder="Pavardenis" required>
+                <input type="text" name="lname" class="form-control" placeholder="Pavardenis">
             </div>
 
             <div class="col-lg-6">
                 <br>
                 Darbo pradžios data
-                <input type="date" id="today" name="data" class="form-control" placeholder="Data" required>
+                <input type="date" id="today" name="data" class="form-control" placeholder="Data" >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Pareigos
-                <input type="text" name="pareigos" class="form-control" placeholder="Pvz: Vairuotojas" required>
+                <input type="text" name="pareigos" class="form-control" placeholder="Pvz: Vairuotojas" >
             </div>
 
         </div>
@@ -138,37 +138,37 @@
             <div class="col-lg-6">
             <br>
                 Elektroninis paštas
-                <input type="email" name="email" class="form-control" placeholder="elpastas@gmail.com" required>
+                <input type="email" name="email" class="form-control" placeholder="elpastas@gmail.com" >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Telefono numeris
-                <input type="tel" name="phone" class="form-control" placeholder="+370" required>
+                <input type="tel" name="phone" class="form-control" placeholder="+370" >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Asmens kodas
-                <input type="text" name="asmenskodas" class="form-control" placeholder="A.k." maxlength="11" required>
+                <input type="text" name="asmenskodas" class="form-control" placeholder="A.k." maxlength="11" >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Gyvenamasis miestas/rajonas
-                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kaunas" required>
+                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kaunas" >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Gyvenamasis adresas
-                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g." required>
+                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kauno g." >
             </div>
 
             <div class="col-lg-6">
             <br>
                 Banko sąskaitos numeris
-                <input type="text" name="sasknr" class="form-control" placeholder="Pvz: LT111222333445551652" maxlength="18" required>
+                <input type="text" name="sasknr" class="form-control" placeholder="Pvz: LT111222333445551652" maxlength="18" >
             
             </div>
 
@@ -180,20 +180,20 @@
             <div class="col-lg-6">
             <br>
                 Įmonės pavadinimas
-                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" required>
+                <input type="text" name="pavadinimas" class="form-control" placeholder="Pvz: UAB 'Imone'" >
             
             </div>
 
             <div class="col-lg-6">
             <br>
                 Pareigos kilmininko linksniu
-                <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Kelininko" required>
+                <input type="text" name="pareigosKil" class="form-control" placeholder="Pvz: Kelininko" >
             </div>
             
   
         </div>
 
-        <label for="pasirinkti">Pasirinkite Taikyti/Netaikyti NPD:</label required>
+        <label for="pasirinkti">Pasirinkite Taikyti/Netaikyti NPD:</label >
         <select class="rounded" name="pasirinkti" id="pasirinkti">
   <option value="netaikyti">Netaikyti</option>
   <option value="taikyti">Taikyti</option>
@@ -201,7 +201,7 @@
 
         <br>
 
-        <label for="uzmokestis">Informaciją apie man priskaičiuotą darbo užmokesti teikti:</label required>
+        <label for="uzmokestis">Informaciją apie man priskaičiuotą darbo užmokesti teikti:</label >
         <select class="rounded" name="uzmokestis" id="uzmokestis">
   <option value="Lapelyje">Lapelyje</option>
   <option value="El.pastu">El.paštu</option>
