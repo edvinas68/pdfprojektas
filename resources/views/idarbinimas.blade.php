@@ -49,7 +49,7 @@
 <body>
 <div class="container">
     
-    <form action="generate.blade.php" method="POST">
+    <form action="#" method="POST">
 
     <br>
         
