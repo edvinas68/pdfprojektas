@@ -8,6 +8,8 @@ use App\Http\Controllers\Idarbinimas;
 
 use App\Http\Controllers\Atleidimas54;
 
+use App\Http\Controllers\Atleidimas55;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,13 +70,13 @@ Route::middleware('auth')->group(function () {
     
     //------------------------------------------------------------ATLEIDIMAS--------------------------------------------
     Route::get('/54', [Atleidimas54::class, 'render'])->name('54');
-    Rouge::post('/54', [Atleidimas54::class, 'generate'])->name('54.generate');
+    Route::post('/54', [Atleidimas54::class, 'generate'])->name('54.generate');
     
-    
-    Route::get('/55', function () {
-        return view('55');
-    })->name('Atleidimas pagal 55 str.');
-    
+    Route::get('/55', [Atleidimas55::class, 'render'])->name('55');
+    Route::get('/55', [Atleidimas55::class, 'generate'])->name('55.generate');
+
+
+
     Route::get('/56', function () {
         return view('56');
     })->name('Atleidimas pagal 56 str.');

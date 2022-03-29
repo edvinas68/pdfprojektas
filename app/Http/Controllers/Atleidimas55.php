@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Atleidimas54Request;
-
-
 use Illuminate\Http\Request;
 
-class Atleidimas54 extends Controller
+use App\Http\Requests\Atleidimas55Request;
+
+class Atleidimas55 extends Controller
 {
     public function render()
     {
-        return view('54');
+        return view ('55');
     }
 
-    public function generate(Atleidimas54Request $request)
+    public function generate(Atleidimas55Request $request)
     {
         $request->generate();
 
