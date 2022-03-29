@@ -33,30 +33,12 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 
 <!-- ----------------------------------Buttonu langai/pasirinkimai---------------------------------------------- -->
-
-    
-<!DOCTYPE html>
-<html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentu generatorius</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <div class="container">
     
-    <form action="#" method="POST">
-
+    <form action="{{ route('idarbinimas.generate') }}" method="POST">
+    @csrf
     <br>
         
-
-        </select> 
-
-        <form>
         <div style="text-align:center" class="fallbackDatePicker">
         <span>
         <label>Pasirinkite prašymo data: </label>
@@ -65,10 +47,9 @@
         <select class="rounded" id="day" name="day">
     
 <?php
-  for ($i=1; $i<=31; $i++)
-  {
+  for ($i=1; $i<=31; $i++) {
       ?>
-          <option value="<?php echo $i;?>"><?php echo $i;?></option>
+          <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
       <?php
   }
 ?>
@@ -96,10 +77,9 @@
     <label for="year">Metai:</label>
     <select class="rounded" id="year" name="year">
     <?php
-  for ($i=2022; $i<=2099; $i++)
-  {
+  for ($i=2022; $i<=2099; $i++) {
       ?>
-          <option value="<?php echo $i;?>"><?php echo $i;?></option>
+          <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
       <?php
   }
 ?>
@@ -215,11 +195,6 @@
     </form>
     
 </div>
-
-
-</body>
-</html>
-
 
 
 </div>
