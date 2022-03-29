@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use App\Classes\GeneratePDF;
 
-class IdarbinimasRequest extends FormRequest
+class Atleidimas54Request extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +14,7 @@ class IdarbinimasRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -27,16 +27,11 @@ class IdarbinimasRequest extends FormRequest
         return [
             'fname' => 'required', 
             'lname' => 'required',
-            'email' => 'required|email',
-            'phone' => 'required|tel',
-            'asmenskodas' => 'required',
-            'miestas' => 'required',
-            'adresas' => 'required',
-            'saskr' => 'required',
+            'imoneskodas' => 'required',
+            'buveine' => 'required',
             'pavadinimas' => 'required',
-            'pareigosKil' => 'required',
-            'pasirinkti' => 'required',
-            'uzmokestis' => 'required',
+            'sutartiesnr' => 'required',
+            'vardasKil' => 'required',
             'day' => 'required',
             'month' => 'required',
             'year' => 'required',
@@ -46,19 +41,14 @@ class IdarbinimasRequest extends FormRequest
     {
         $atributes= $this->validated();
 
-
         $data = [
             'name_field' => $atributes['fname'] . ' ' . $atributes['lname'],
-            'email_field' => $atributes['email'],
-            'phone_field' => $atributes['phone'],
-            'asmenskodas_field' => $atributes['asmenskodas'],
-            'meistas_field' => $atributes['miestas'],
-            'adresas_field' => $atributes['adresas'],
-            'sasknr_field' => $atributes['sasknr'],
+            'imoneskodas_field' => $atributes['imoneskodas'],
+            'buveine_field' => $atributes['buveine'],
             'pavadinimas_field' => $atributes['pavadinimas'],
-            'pareigosKil_field' => $atributes['pareigosKil'],
-            'pasirinkti_field' => $atributes['pasirinkti'],
-            'uzmokestis_field' => $atributes['uzmokestis'],
+            'sutartiesnr_field' => $atributes['sutartiesnr'],
+            'vardasKil_field' => $atributes['vardasKil'],
+            'imoneskodas_field' => $atributes['imoneskodas'],
             'day_field' => $atributes['day'],
             'month_field' => $atributes['month'],
             'year_field' => $atributes['year'],

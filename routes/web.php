@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\Idarbinimas;
 
+use App\Http\Controllers\Atleidimas54;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,9 +67,9 @@ Route::middleware('auth')->group(function () {
     })->name('Darbo sąlygų keitimas');
     
     //------------------------------------------------------------ATLEIDIMAS--------------------------------------------
-    Route::get('/54', function () {
-        return view('54');
-    })->name('Atleidimas pagal 54 str.');
+    Route::get('/54', [Atleidimas54::class, 'render'])->name('54');
+    Rouge::post('/54', [Atleidimas54::class, 'generate'])->name('54.generate');
+    
     
     Route::get('/55', function () {
         return view('55');

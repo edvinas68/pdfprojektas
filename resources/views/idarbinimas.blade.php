@@ -136,7 +136,7 @@
             <div class="col-lg-6">
             <br>
                 Gyvenamasis miestas/rajonas
-                <input type="text" name="adresas" class="form-control" placeholder="Pvz: Kaunas" >
+                <input type="text" name="miestas" class="form-control" placeholder="Pvz: Kaunas" >
             </div>
 
             <div class="col-lg-6">
@@ -151,11 +151,6 @@
                 <input type="text" name="sasknr" class="form-control" placeholder="Pvz: LT111222333445551652" maxlength="18" >
             
             </div>
-
-
-            
-
-
 
             <div class="col-lg-6">
             <br>
