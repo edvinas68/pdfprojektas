@@ -17,7 +17,7 @@
              $pdf->fillForm($data)
              //->flatten()
              ->needAppearances()
-             ->saveAs(storage_path('completed') . $filename);
+             ->saveAs('./completed/' . $filename);
       
              return $filename;
          }

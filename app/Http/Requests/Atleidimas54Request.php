@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Classes\GeneratePDF;
+use mikehaertl\pdftk\Pdf;
 
 class Atleidimas54Request extends FormRequest
 {
@@ -14,7 +14,7 @@ class Atleidimas54Request extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class Atleidimas54Request extends FormRequest
     public function rules()
     {
         return [
-            'fname' => 'required', 
+            'fname' => 'required',
             'lname' => 'required',
             'imoneskodas' => 'required',
             'buveine' => 'required',
@@ -40,7 +40,7 @@ class Atleidimas54Request extends FormRequest
     public function generate()
     {
         $atributes= $this->validated();
-
+        
         $data = [
             'name_field' => $atributes['fname'] . ' ' . $atributes['lname'],
             'imoneskodas_field' => $atributes['imoneskodas'],
@@ -54,9 +54,22 @@ class Atleidimas54Request extends FormRequest
             'year_field' => $atributes['year'],
         ];
 
-        $pdf = new GeneratePDF;
-        $response = $pdf->generate($data);
-
+        
+        
+        $filename = '(pdf_)' . rand(2000, 1200000) . '.pdf';
+      
+        $pdf = new Pdf(base_path('test.pdf'), [
+            'useExec' => true,
+        ]);    
+        $file=$pdf->fillForm($data)
+             //->flatten()
+             ->needAppearances()
+             ->saveAs(storage_path('completed/'.$filename));
+            $response = [
+                'success'=> $file,
+                'path' => storage_path('completed/'.$filename)
+            ];
         return $response;
+
     }
 }

@@ -48,8 +48,8 @@
 </head>
 <body>
 <div class="container">
-    <form action="generateprasymas.php" method="POST">
-
+    <form action="{{route('54.generate')}}" method="POST">
+    @csrf
         <br>
         
 

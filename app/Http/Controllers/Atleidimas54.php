@@ -16,8 +16,9 @@ class Atleidimas54 extends Controller
 
     public function generate(Atleidimas54Request $request)
     {
-        $request->generate();
-
+        
+       $response = $request->generate();
+        dd($response);
         return back()->with('success', 'Pavyko');
     }
 }
