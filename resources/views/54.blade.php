@@ -1,6 +1,5 @@
 <!-- ----------------------------------NAVABAR---------------------------------------------- -->
 
-
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -31,16 +30,16 @@
 <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                
+
 <!-- ----------------------------------Buttonu langai/pasirinkimai---------------------------------------------- -->
 
-    
+
 <!DOCTYPE html>
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
-    
-    
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentu generatorius</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -48,12 +47,16 @@
 </head>
 <body>
 <div class="container">
+
+    @if (session()->has('atleidimai.54.download'))
+        <div class="alert alert-info mt-3">
+            <a href="{{ session('atleidimai.54.download') }}">{{ session('atleidimai.54.download') }}</a>
+        </div>
+    @endif
+
     <form action="{{route('54.generate')}}" method="POST">
     @csrf
         <br>
-        
-
-        </select> 
 
         <form>
         <div style="text-align:center" class="fallbackDatePicker">
@@ -62,7 +65,7 @@
         <br>
         <label for="day">Diena:</label>
         <select class="rounded" id="day" name="day">
-    
+
 <?php
   for ($i=1; $i<=31; $i++)
   {
@@ -152,7 +155,7 @@
                 <input type="text" name="vardasKil" class="form-control" placeholder="Pvz: Aldonos Kazlauskienės" required>
                 <br>
             </div>
-            
+
             <div class="col-lg-6">
             <div class="fallbackDatePicker">
         <span>
@@ -160,7 +163,7 @@
         <br>
         <label for="day">Diena:</label>
         <select class="rounded" id="atleidimoday" name="atleidimoday">
-    
+
 <?php
   for ($i=1; $i<=31; $i++)
   {
@@ -207,18 +210,18 @@
             </div>
 
 
-            
+
         </div>
 
         <br>
     <br>
-        
-        
+
+
         <button type="submit" class="btn btn-block btn-dark">Generuoti atleidimo iš darbo dokumentus</button>
 
         <br><br>
     </form>
-    
+
 </div>
 
 

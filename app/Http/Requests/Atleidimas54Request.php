@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use mikehaertl\pdftk\Pdf;
 
 class Atleidimas54Request extends FormRequest
@@ -12,7 +14,7 @@ class Atleidimas54Request extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -22,7 +24,7 @@ class Atleidimas54Request extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         return [
             'fname' => 'required',
@@ -37,10 +39,13 @@ class Atleidimas54Request extends FormRequest
             'year' => 'required',
         ];
     }
+
     public function generate()
     {
-        $atributes= $this->validated();
-        
+        session()->forget('atleidimai.54.download');
+
+        $atributes = $this->validated();
+
         $data = [
             'name_field' => $atributes['fname'] . ' ' . $atributes['lname'],
             'imoneskodas_field' => $atributes['imoneskodas'],
@@ -48,28 +53,33 @@ class Atleidimas54Request extends FormRequest
             'pavadinimas_field' => $atributes['pavadinimas'],
             'sutartiesnr_field' => $atributes['sutartiesnr'],
             'vardasKil_field' => $atributes['vardasKil'],
-            'imoneskodas_field' => $atributes['imoneskodas'],
             'day_field' => $atributes['day'],
             'month_field' => $atributes['month'],
             'year_field' => $atributes['year'],
         ];
 
-        
-        
-        $filename = '(pdf_)' . rand(2000, 1200000) . '.pdf';
-      
+        $filename = 'pdf_' . uniqid(time()) . '.pdf';
+        $saveAs = 'atleidimai/54/' . $filename;
+
         $pdf = new Pdf(base_path('test.pdf'), [
             'useExec' => true,
-        ]);    
-        $file=$pdf->fillForm($data)
-             //->flatten()
-             ->needAppearances()
-             ->saveAs(storage_path('completed/'.$filename));
-            $response = [
-                'success'=> $file,
-                'path' => storage_path('completed/'.$filename)
-            ];
-        return $response;
+        ]);
 
+        $response = $pdf->fillForm($data)
+            //->flatten()
+            ->needAppearances()
+            ->execute();
+
+        $file = file_get_contents((string)$pdf->getTmpFile());
+
+        Storage::disk('public')->put($saveAs, $file, 'public');
+
+        session()->put('atleidimai.54.download', asset(Storage::url($saveAs)));
+
+        return [
+            'success' => $response,
+            'url' => asset(Storage::url($saveAs)),
+            'file' => $saveAs,
+        ];
     }
 }
