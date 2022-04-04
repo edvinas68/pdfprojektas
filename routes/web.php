@@ -10,6 +10,8 @@ use App\Http\Controllers\Atleidimas54;
 
 use App\Http\Controllers\Atleidimas55;
 
+use App\Http\Controllers\Atleidimas56;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -83,6 +85,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/55', [Atleidimas55::class, 'render'])->name('55');
     Route::post('/55', [Atleidimas55::class, 'generate'])->name('55.generate');
+
+    Route::get('/56', [Atleidimas55::class, 'render'])->name('56');
+    Route::post('/56', [Atleidimas55::class, 'generate'])->name('56.generate');
 
 
 

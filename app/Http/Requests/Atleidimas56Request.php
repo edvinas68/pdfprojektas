@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use mikehaertl\pdftk\Pdf;
 
-class Atleidimas55Request extends FormRequest
+class Atleidimas56Request extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -42,7 +42,7 @@ class Atleidimas55Request extends FormRequest
 
     public function generate()
     {
-        session()->forget('atleidimai.55.download');
+        session()->forget('atleidimai.56.download');
 
         $atributes = $this->validated();
 
@@ -58,10 +58,10 @@ class Atleidimas55Request extends FormRequest
             'year_field' => $atributes['year'],
         ];
 
-        $filename = 'pdf_' . uniqid(time()) . '.pdf';
-        $saveAs = 'atleidimai/55/' . $filename;
+        $filename = 'pdf_'. uniqid(time()) . '.pdf';
+        $saveAs = 'atleidimai/56' . $filename;
 
-        $pdf = new Pdf(base_path('test1.pdf'), [
+        $pdf = new Pdf(base_path('test.pdf'),[
             'useExec' => true,
         ]);
 
@@ -74,7 +74,7 @@ class Atleidimas55Request extends FormRequest
 
         Storage::disk('public')->put($saveAs, $file, 'public');
 
-        session()->put('atleidimai.55.download', asset(Storage::url($saveAs)));
+        session()->put('atleidimai.56.download', asset(Storage::url($saveAs)));
 
         return [
             'success' => $response,
