@@ -3,7 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Classes\GeneratePDF;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+use mikehaertl\pdftk\Pdf;
 
 class IdarbinimasRequest extends FormRequest
 {
@@ -12,7 +14,7 @@ class IdarbinimasRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -22,7 +24,7 @@ class IdarbinimasRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         return [
             'fname' => 'required', 
@@ -44,6 +46,9 @@ class IdarbinimasRequest extends FormRequest
     }
     public function generate()
     {
+
+        session()->forget('idarbinimai.download');
+
         $atributes= $this->validated();
 
 
@@ -64,9 +69,28 @@ class IdarbinimasRequest extends FormRequest
             'year_field' => $atributes['year'],
         ];
 
-        $pdf = new GeneratePDF;
-        $response = $pdf->generate($data);
+        $filename = 'pdf_' . uniqid(time()) . '.pdf';
+        $saveAs = 'idarbinimai' . $filename;
 
-        return $response;
+        $pdf = new Pdf(base_path(test.pdf), [
+            'useExec' => true,
+        ]);
+
+        $response = $pdf->fillForm($data)
+            //->flatten()
+            ->needAppearances()
+            ->execute();
+
+        $file = file_get_contents((string)$pdf->getTmpFile());
+
+        Storage::disk('public')->put($saveAs, $file, 'public');
+
+        session()->put('idarbinimai.download', asset(Storage::url($saveAs)));
+
+        return [
+            'success' => $response,
+            'url' => asset(Storage::url($saveAs)),
+            'file' => $saveAs,
+        ];
     }
 }

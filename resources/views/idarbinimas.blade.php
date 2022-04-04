@@ -35,7 +35,7 @@
 <!-- ----------------------------------Buttonu langai/pasirinkimai---------------------------------------------- -->
 <div class="container">
     
-    <form action="{{ route('idarbinimas.generate') }}" method="POST">
+    <form action="{{route('idarbinimas.generate')}}" method="POST">
     @csrf
     <br>
         

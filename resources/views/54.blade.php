@@ -48,11 +48,11 @@
 <body>
 <div class="container">
 
-    @if (session()->has('atleidimai.54.download'))
+    <!-- @if (session()->has('atleidimai.54.download'))
         <div class="alert alert-info mt-3">
             <a href="{{ session('atleidimai.54.download') }}">{{ session('atleidimai.54.download') }}</a>
         </div>
-    @endif
+    @endif -->
 
     <form action="{{route('54.generate')}}" method="POST">
     @csrf

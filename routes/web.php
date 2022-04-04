@@ -42,6 +42,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/atleidimas/54/thanks', function () {
         return view('thanks');
     })->name('atleidimas.54.thanks');
+    
+    Route::get('/atleidimas/55/thanks', function () {
+        return view('thanks');
+    })->name('atleidimas.55.thanks');
+    
 
     Route::get('/AP_atostogos', function () {
         return view('AP_atostogos');
@@ -77,7 +82,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/54', [Atleidimas54::class, 'generate'])->name('54.generate');
 
     Route::get('/55', [Atleidimas55::class, 'render'])->name('55');
-    Route::get('/55', [Atleidimas55::class, 'generate'])->name('55.generate');
+    Route::post('/55', [Atleidimas55::class, 'generate'])->name('55.generate');
 
 
 

@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Classes\GeneratePDF;
-
 use App\Http\Requests\IdarbinimasRequest;
-
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class Idarbinimas extends Controller
 {
@@ -17,8 +15,10 @@ class Idarbinimas extends Controller
 
     public function generate(IdarbinimasRequest $request)
     {
-        $request->generate();
+        $response = $request->generate();
 
-        return back()->with('success', 'Pavyko');
+        return Storage::disk('public')->download($response['file']);
+
+        return redirect()->route('idarbinimas.thanks');
     }
 }

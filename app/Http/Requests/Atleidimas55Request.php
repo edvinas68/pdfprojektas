@@ -3,7 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Classes\GeneratePDF;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use mikehaertl\pdftk\Pdf;
 
 class Atleidimas55Request extends FormRequest
 {
@@ -12,9 +14,9 @@ class Atleidimas55Request extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,38 +24,62 @@ class Atleidimas55Request extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         return [
-            'fname' => 'required', 
+            'fname' => 'required',
             'lname' => 'required',
-            'asmenskodas' => 'required',
-            'adresas' => 'required',
-            'vardasGal' => 'required',
-            'data' => 'required',
+            'imoneskodas' => 'required',
+            'buveine' => 'required',
+            'pavadinimas' => 'required',
+            'sutartiesnr' => 'required',
+            'vardasKil' => 'required',
             'day' => 'required',
             'month' => 'required',
             'year' => 'required',
         ];
     }
+
     public function generate()
     {
-        $atributes=$this->validated();
+        session()->forget('atleidimai.55.download');
+
+        $atributes = $this->validated();
 
         $data = [
             'name_field' => $atributes['fname'] . ' ' . $atributes['lname'],
-            'asmenskodas_field' => $atributes['asmenskodas'],
-            'adresas_field' => $atributes['adresas'],
-            'vardasGal_field' => $atributes['vardasGal'],
-            'data_field' => $atributes['data'],
+            'imoneskodas_field' => $atributes['imoneskodas'],
+            'buveine_field' => $atributes['buveine'],
+            'pavadinimas_field' => $atributes['pavadinimas'],
+            'sutartiesnr_field' => $atributes['sutartiesnr'],
+            'vardasKil_field' => $atributes['vardasKil'],
             'day_field' => $atributes['day'],
             'month_field' => $atributes['month'],
             'year_field' => $atributes['year'],
         ];
 
-        $pdf = new GeneratePDF;
-        $response = $pdf->generate($data);
+        $filename = 'pdf_' . uniqid(time()) . '.pdf';
+        $saveAs = 'atleidimai/55/' . $filename;
 
-        return $response;
+        $pdf = new Pdf(base_path('test.pdf'), [
+            'useExec' => true,
+        ]);
+
+        $response = $pdf->fillForm($data)
+            //->flatten()
+            ->needAppearances()
+            ->execute();
+
+        $file = file_get_contents((string)$pdf->getTmpFile());
+
+        Storage::disk('public')->put($saveAs, $file, 'public');
+
+        session()->put('atleidimai.55.download', asset(Storage::url($saveAs)));
+
+        return [
+            'success' => $response,
+            'url' => asset(Storage::url($saveAs)),
+            'file' => $saveAs,
+        ];
     }
 }

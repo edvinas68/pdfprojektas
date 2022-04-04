@@ -35,20 +35,15 @@
 <!-- ----------------------------------Buttonu langai/pasirinkimai---------------------------------------------- -->
 
     
-<!DOCTYPE html>
-<html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentu generatorius</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <div class="container">
-    <form action="generateprasymas.php" method="POST">
+
+    <!-- @if (session()->has('atleidimai.55.download'))
+        <div class="alert alert-info mt-3">
+            <a href="{{ session('atleidimai.55.download') }}">{{ session('atleidimai.55.download') }}</a>
+        </div>
+    @endif -->
+    
+    <form action="{{route('55.generate')}}" method="POST">
         <br>
         <h1 style="text-align:center">Sugeneruokite dokumentą</h1>
         <br>
@@ -168,11 +163,6 @@
     </form>
     
 </div>
-
-
-</body>
-</html>
-
 
 
 </div>

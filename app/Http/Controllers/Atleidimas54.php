@@ -6,6 +6,7 @@ use App\Http\Requests\Atleidimas54Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 
+
 class Atleidimas54 extends Controller
 {
     public function render()
@@ -17,7 +18,7 @@ class Atleidimas54 extends Controller
     {
         $response = $request->generate();
 
-        // return Storage::disk('public')->download($response['file']);
+        return Storage::disk('public')->download($response['file']);
 
         return redirect()->route('atleidimas.54.thanks');
     }
