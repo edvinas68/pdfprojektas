@@ -48,7 +48,7 @@
 </head>
 <body>
 <div class="container">
-    <form action="generateprasymas.php" method="POST">
+    <form action="{{route('57.generate')}}" method="POST">
 
         <br>
         

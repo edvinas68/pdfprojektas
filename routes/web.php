@@ -89,6 +89,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/56', [Atleidimas55::class, 'render'])->name('56');
     Route::post('/56', [Atleidimas55::class, 'generate'])->name('56.generate');
 
+    Route::get('/57', [Atleidimas55::class, 'render'])->name('57');
+    Route::post('/57', [Atleidimas55::class, 'generate'])->name('57.generate');
 
 
     Route::get('/56', function () {
