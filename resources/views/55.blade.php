@@ -37,13 +37,24 @@
     
 <div class="container">
 
-    <!-- @if (session()->has('atleidimai.55.download'))
+    @if (session()->has('atleidimai.55.download'))
         <div class="alert alert-info mt-3">
             <a href="{{ session('atleidimai.55.download') }}">{{ session('atleidimai.55.download') }}</a>
         </div>
-    @endif -->
+    @endif
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     
     <form action="{{route('55.generate')}}" method="POST">
+        @csrf
         <br>
         <h1 style="text-align:center">Sugeneruokite dokumentą</h1>
         <br>
